@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+     	<servlet-name>addUser</servlet-name>
+     	<servlet-class>servlet.addUser</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>addUser</servlet-name>
+     	<url-pattern>/addusr</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>allUserDetails</servlet-name>
+     	<servlet-class>servlet.allUserDetails</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>allUserDetails</servlet-name>
+     	<url-pattern>/alluser</url-pattern>
+     </servlet-mapping>
+     
+	<servlet>
+     	<servlet-name>updtUser</servlet-name>
+     	<servlet-class>servlet.updtUser</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>updtUser</servlet-name>
+     	<url-pattern>/usrud</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+        <servlet-name>viewAssignment</servlet-name>
+        <servlet-class>servlet.viewAssignment</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>viewAssignment</servlet-name>
+        <url-pattern>/viewallassignments</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DocumentDownload</servlet-name>
+        <servlet-class>servlet.DocumentDownload</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DocumentDownload</servlet-name>
+        <url-pattern>/document</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Login_stu</servlet-name>
+        <servlet-class>servlet.Login_stu</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Login_stu</servlet-name>
+        <url-pattern>/lgin</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>assignmentSub</servlet-name>
+        <servlet-class>servlet.assignmentSub</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>assignmentSub</servlet-name>
+        <url-pattern>/assignsub</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Update_stdprofile</servlet-name>
+        <servlet-class>servlet.Update_stdprofile</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Update_stdprofile</servlet-name>
+        <url-pattern>/updtestd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>StudentInquiry</servlet-name>
+        <servlet-class>servlet.StudentInquiry</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>StudentInquiry</servlet-name>
+        <url-pattern>/stinq</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+     	<servlet-name>getAllPrg</servlet-name>
+     	<servlet-class>servlet.getAllPrg</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>getAllPrg</servlet-name>
+     	<url-pattern>/allprgms</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+
+     	<servlet-name>addApplicant</servlet-name>
+     	<servlet-class>servlet.addApplicant</servlet-class>
+     </servlet>
+     
+     
+     <servlet-mapping>
+     	<servlet-name>addApplicant</servlet-name>
+     	<url-pattern>/adapl</url-pattern>
+     </servlet-mapping>
+     
+     
+
+	<servlet>
+        <servlet-name>createAssignment</servlet-name>
+        <servlet-class>servlet.createAssignment</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>createAssignment</servlet-name>
+        <url-pattern>/createassign</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>mgrapplicant</servlet-name>
+        <servlet-class>servlet.mgrapplicant</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>mgrapplicant</servlet-name>
+        <url-pattern>/mgapcant</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>applicantlogin</servlet-name>
+        <servlet-class>servlet.applicantlogin</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>applicantlogin</servlet-name>
+        <url-pattern>/aplgin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteApplicant</servlet-name>
+        <servlet-class>servlet.deleteApplicant</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>deleteApplicant</servlet-name>
+        <url-pattern>/dltapl</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateApplicant</servlet-name>
+        <servlet-class>servlet.updateApplicant</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>updateApplicant</servlet-name>
+        <url-pattern>/dupdapl</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>singleDataBtn</servlet-name>
+		<servlet-class>servlet.singleDataBtn</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>singleDataBtn</servlet-name>
+		<url-pattern>/singledbtn</url-pattern>
+
+	</servlet-mapping>
+	
+	<servlet>
+     	<servlet-name>deleteUser</servlet-name>
+     	<servlet-class>servlet.deleteUser</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>deleteUser</servlet-name>
+     	<url-pattern>/userdel</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>login</servlet-name>
+     	<servlet-class>servlet.login</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>login</servlet-name>
+     	<url-pattern>/lgnuspg</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>sendNewInq</servlet-name>
+     	<servlet-class>servlet.sendNewInq</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>sendNewInq</servlet-name>
+     	<url-pattern>/addnewinq</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>addManager</servlet-name>
+     	<servlet-class>servlet.addManager</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>addManager</servlet-name>
+     	<url-pattern>/newmanager</url-pattern>
+     </servlet-mapping> 
+         
+         
+         
+ </web-app>

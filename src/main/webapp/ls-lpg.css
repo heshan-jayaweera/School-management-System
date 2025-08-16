@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(homebg1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    position: relative;
+}
+
+.logo {
+    color: #fff;
+}
+
+#logoid {
+    width: 290px;
+    padding: 20px 20px 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#menuList .currentpg {
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: rgb(143, 135, 135);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width: 980px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        gap: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    #menuList .currentpg {
+        color: #f1bc0d;
+        background: none;
+    }
+
+    #logoid {
+        width: 200px;
+    }
+
+    #flogoid {
+        width: 200px;
+    }
+}
+
+@media (max-width: 430px) {
+    #logoid {
+        width: 200px;
+    }
+}
+
+/* Main content */
+main .cont {
+    display:table;
+    justify-content: center;
+    padding: 30px;
+}
+main.h2{
+	justify-content:center;
+	color:red;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(5px);
+}
+
+form label,
+form .form-label {
+    color:black;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    background-color: #2d2e33;
+    width: 100%;
+}
+
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+.footer-col {
+    width: 25%;
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #f1bc0d;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 2px;
+}
+
+.icons {
+    font-size: 30px;
+}
+
+#flogoid {
+    width: 250px;
+    padding: 20px;
+}
+
+.crt {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+@media (max-width: 980px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before {
+        display: none;
+    }
+}
+
+@media (max-width: 555px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+/* Ensure text in table cells is visible */
+td {
+    color: black;
+    font-weight: 500;
+}
+
+/* Ensure labels and input values are visible */
+.form-label,
+label {
+    color: black !important;
+}
+
+input,
+textarea,
+select {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+}
+
+/* Display list content like user info in profile pages clearly */
+.list-group-item {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+/* Profile Table Card */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: transform 0.2s ease-in-out;
+}
+
+.table:hover {
+    transform: scale(1.01);
+}
+
+.table th,
+.table td {
+    vertical-align: middle !important;
+}
+
+/* Profile Section Header */
+h1.text-center {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f1bc0d;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Buttons - Consistent Look */
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #f1bc0d;
+    border-color: #f1bc0d;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #e0aa00;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+.btn-secondary.disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #e0e0e0;
+}
+
+/* Alert Styling */
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.2);
+    border: 1px solid #ffc107;
+    color: #856404;
+    border-radius: 10px;
+}
+
+/* Form Container Centering */
+main .cont {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+
+    h1.text-center {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-weight: 600;
+}
+.card-text {
+    font-size: 0.95rem;
+}
+}
+
+
+
+

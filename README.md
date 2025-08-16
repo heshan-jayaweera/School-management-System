@@ -1,2 +1,2 @@
-# School management System
-
+# SIMS
+ 

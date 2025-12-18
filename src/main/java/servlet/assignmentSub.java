@@ -46,6 +46,7 @@ public class assignmentSub extends HttpServlet {
                 }
 	    		
 	    		Submission sub = new Submission();
+	    		sub.setAssignmentId(assignmentId);
 	    		sub.setStudentId(null);
 	    		sub.setDocument(documentBytes);
 	    		sub.setStatus("done");
